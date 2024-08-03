@@ -1,0 +1,558 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1A1C19
+}
+
+.fullpage {
+    max-width:1420px;
+    margin:0 auto;
+}
+
+/* Nav Bar */
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    width:100%;
+    justify-content: space-between;
+    border:1px solid #B1A592;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.leftnav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.navitems {
+    border:1px solid #B1A592;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #e0d6c2;
+    overflow-wrap: normal;
+    padding:0px 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.navmenu , .cp1 {
+    display: none;
+}
+
+.navitems:not(.companyname):hover {
+    background-color: #B1A592;
+    color: black;
+}
+
+.navitems.companyname {
+   background-color: #323025;
+   border:none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* Main section Cards */
+
+.maincont {
+    display: flex;
+    column-gap: 18px;
+    margin-top: 18px;
+}
+
+/* Congreve Street Card */
+/* modified */
+.museum {
+    background-color:#DFD6C5;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-start;
+   width: 40vw;
+   flex-shrink: 1;
+}
+
+.div1 {
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+.cardfooter {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-top:1px solid #333333;
+    padding: 0px 30px;
+}
+
+.streetimg {
+    display: flex;
+    justify-content: center;
+    overflow:hidden;
+    height: 75%;
+    /* margin-bottom: 25px; */
+    /* padding-bottom: 25px; */
+}
+
+.streetimg img {
+ /* width: 100%; */
+ overflow:hidden;
+ height: 200%;
+ /* margin-bottom: 30px; */
+ border-radius:10%;
+}
+
+.museum > div:not(.cardfooter) {
+    margin: 0 30px 15px 30px;
+}
+
+.cardname {
+    border: 1px solid #323025;
+    width: fit-content;
+    border-radius: 50px;
+    display: flex;
+    padding: 0px 5px 0px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.cardname p {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0px;
+}
+
+div.paratext {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    word-break: break-word;
+    color: #333333;
+}
+
+.paratext span {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1em;
+}
+
+
+/* Right Cards */
+
+.rightitems {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+/* Bread Slicing Card */
+
+.bread {
+    background-color:#8E886D;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+}
+
+.brdiv1 {
+    display:flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    margin:0 30px 30px 30px;
+    column-gap: 10px;
+}
+
+.brcont {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    flex-shrink: 1.5;
+}
+
+
+.brimg {
+    margin-top: 30px;
+    width: 100%;
+    overflow:hidden;
+    border-radius:6%;
+}
+
+.brimg img {
+    width:100%;
+   height: 100%;
+}
+
+/* Right Items- Row 2 */
+
+.rightrow2 {
+  display: flex;
+  column-gap:2%;
+  flex-wrap: nowrap;
+}
+
+/* Portrait Card */
+
+.portrait {
+    background-color:#916E58;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+   flex-shrink: 2;
+   color: #333333;
+   flex-shrink: 1.5;
+   transition: text-decoration 0.3s ease-out 3s;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+}
+
+.dots div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #342415;
+    /* height:30px; */
+    margin: 0; 
+    padding: 0;
+}
+
+.prtname {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.prtname h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.prtdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.prtimg {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    border-radius:15%;
+}
+
+.prtimg3 {
+    max-width: 90%;
+    overflow:hidden;
+}
+
+.prtpara {
+    word-break: break-word;
+}
+
+.prtdiv :not(.cardfooter,.dots div,.cardfooter div) {
+    margin: 16px 5px;
+}
+
+/* Vintage Painting Card */
+
+.vintagepaint {
+    background-color: #B1A48E;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+   /* flex-grow: 2; */
+   color: #333333;
+   flex-shrink: 1.5;
+}
+
+.vpdiv1 {
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin:0 30px 30px 30px;
+    column-gap: 0;
+}
+
+.vpcont {
+    display: flex;
+    justify-content: space-between;
+    align-content:flex-start start;
+}
+
+.cardname.lastcard {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.vpimg {
+    margin-top: 30px;
+    overflow:hidden;
+    border-radius:15%;
+}
+
+.vpdomain {
+    border-top: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-width: 10px;
+    border-bottom-style: double;
+    margin-bottom: 5px;
+    padding: 6px;
+}
+
+/* Animations */
+ 
+/* Museum  */
+
+.museum .streetimg img {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease, border-radius 1s ease;
+    transform-origin: 50% 50%;
+  }
+
+  .museum:hover .streetimg img {
+    transform: scale(1.1);
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+  }
+
+/* Bread  */
+
+.bread .brimg img {
+    width: 100%;
+    transition: transform 1s ease, border-radius 1s ease;
+    transform-origin: 50% 50%;
+  }
+
+  .bread:hover .brimg img {
+    transform: scale(1.1);
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+  }
+
+  /* Portrait */
+
+.portrait .prtimg img {
+    width: 100%;
+    transition: transform 1s ease, border-radius 1s ease;
+    transform-origin: 50% 50%;
+  }
+
+  .portrait:hover .prtimg img {
+    transform: scale(1.1);
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+  }
+
+  .portrait .prtname h2 {
+    width: 100%;
+    transition: text-decoration 1s ease;
+    transform-origin: 50% 50%;
+  }
+
+ .portrait:hover .prtname h2{
+    text-decoration: underline;
+ }
+
+  /* Vintage Painting  */
+
+  .vintagepaint .vpimg img {
+    width: 100%;
+    transition: transform 1s ease, border-radius 1s ease;
+    transform-origin: 50% 50%;
+  }
+
+  .vintagepaint:hover .vpimg img {
+    transform: scale(1.1);
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+  }
+
+
+
+  /* Media Queries */
+
+  /* Mobiles,SmartPhones */
+
+@media screen and (min-width:0px) and (max-width:480px) {
+    .navmenu {
+        display: flex;
+    }
+
+    .cp1 {
+        display: flex;
+        width:70%;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: nowrap;
+        width:100%;
+        justify-content: space-between;
+    }
+
+    .leftnav {
+        display: none;
+    }
+
+    .rightnav {
+        display: none;
+    }
+
+    .maincont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .museum {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+       width: 95vw;
+    }
+
+    .rightitems {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .brdiv1 {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .rightrow2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 15px;
+      }
+
+}
+
+ /* Ipad and Tablets */
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .navmenu {
+        display: flex;
+    }
+
+    .cp1 {
+        display: flex;
+        width:70%;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: nowrap;
+        width:100%;
+        justify-content: space-between;
+    }
+
+    .leftnav {
+        display: none;
+    }
+
+    .rightnav {
+        display: none;
+    }
+
+    .maincont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .museum {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+       width: 95vw;
+    }
+
+    .streetimg {
+        max-height: 40vh;
+        width: 95%;
+        align-self: center;
+    }
+
+    .prtdiv :not(.cardfooter,.dots div,.cardfooter div) {
+        margin: 24px 5px;
+    }
+
+    .vintagepaint {
+        margin-right: 10px;
+    }
+
+    .rightitems {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+}
+
+/* Small Laptop Screens and Large Tablets */
+
+@media screen and (min-width:769px) and (max-width:1024px)  {
+    /* .companyname {
+        width:40%;
+    }  */
+
+    .maincont {
+        column-gap: 8px;
+        margin-top: 8px;
+    }
+
+    .rightitems {
+        row-gap: 8px;
+    }
+
+    .brdiv1 {
+        column-gap: 8px;
+    }
+
+    .rightrow2 {
+        column-gap:8px;
+      }
+
+}
